@@ -4,7 +4,7 @@ const http = require('http');
 // 创建服务
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('hello node.js');
+  res.end('Hello Node.js');
 });
 
 // 监听端口
