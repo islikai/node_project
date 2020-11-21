@@ -1,5 +1,7 @@
+// node内置原生模块
 const http = require('http');
 
+// 创建服务
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.end('hello node.js');
@@ -12,7 +14,7 @@ server.listen(3000, 'localhost');
 server.on('listening', () => {
   console.log('Server is listening');
   // 关闭服务器
-  server.close();
+  // server.close();
 });
 
 // 客户端与服务器以建立好连接回调会触发
